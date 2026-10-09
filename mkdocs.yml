@@ -1,0 +1,67 @@
+site_name: 수포자를 위한 고등수학
+site_description: 수학을 포기했던 사람도 처음부터 다시 시작할 수 있는 쉬운 고등학교 수학
+site_url: https://goodhosup.github.io/math/
+repo_url: https://github.com/goodhosup/math
+repo_name: goodhosup/math
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  font:
+    text: Noto Sans KR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 어두운 화면으로
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 밝은 화면으로
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - content.action.edit
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+  - stylesheets/extra.css
+
+nav:
+  - 처음 오셨나요?:
+      - 소개: index.md
+      - 이렇게 공부하세요: how-to-study.md
+      - 전체 커리큘럼: curriculum.md
+  - "0단계: 기초 다지기":
+      - 1. 음수와 분수, 다시 계산하기: basics/01-numbers.md
+      - 2. 문자와 식 정리하기: basics/02-expressions.md
+      - 3. 일차방정식 풀기: basics/03-linear-equations.md
+      - 4. 함수가 뭐예요?: basics/04-functions.md
+  - "1단계: 공통수학1":
+      - 1. 다항식의 덧셈·뺄셈·곱셈: common1/01-polynomials.md
