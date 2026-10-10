@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="346" height="264" viewBox="0 0 346 264" font-family="sans-serif" font-size="13">
+<rect width="346" height="264" fill="#fff"/>
+<line x1="24.0" y1="240.0" x2="24.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="60.0" y1="240.0" x2="60.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="96.0" y1="240.0" x2="96.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="132.0" y1="240.0" x2="132.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="168.0" y1="240.0" x2="168.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="204.0" y1="240.0" x2="204.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="240.0" y1="240.0" x2="240.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="276.0" y1="240.0" x2="276.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="240.0" x2="276.0" y2="240.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="204.0" x2="276.0" y2="204.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="168.0" x2="276.0" y2="168.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="132.0" x2="276.0" y2="132.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="96.0" x2="276.0" y2="96.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="60.0" x2="276.0" y2="60.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="24.0" x2="276.0" y2="24.0" stroke="#eef0f3"/>
+<line x1="24.0" y1="204.0" x2="276.0" y2="204.0" stroke="#111" stroke-width="1.4"/>
+<text x="280.0" y="208.0">x</text>
+<line x1="60.0" y1="240.0" x2="60.0" y2="24.0" stroke="#111" stroke-width="1.4"/>
+<text x="56.0" y="16.0">y</text>
+<text x="46.0" y="219.0">O</text>
+<clipPath id="c"><rect x="24" y="24" width="252" height="216"/></clipPath>
+<line x1="96.0" y1="168.0" x2="204.0" y2="60.0" stroke="#4f46e5" stroke-width="2"/>
+<line x1="96.0" y1="168.0" x2="204.0" y2="168.0" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="204.0" y1="168.0" x2="204.0" y2="60.0" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="96.0" cy="168.0" r="4.5" fill="#f59e0b"/>
+<text x="86.0" y="186.0" paint-order="stroke" stroke="#fff" stroke-width="4">A(1, 1)</text>
+<circle cx="204.0" cy="60.0" r="4.5" fill="#f59e0b"/>
+<text x="212.0" y="54.0" paint-order="stroke" stroke="#fff" stroke-width="4">B(4, 4)</text>
+<circle cx="204.0" cy="168.0" r="4.5" fill="#f59e0b"/>
+<text x="135.6" y="184.2" fill="#dc2626" font-size="14" font-weight="600" paint-order="stroke" stroke="#fff" stroke-width="4">가로 3</text>
+<text x="211.2" y="110.4" fill="#dc2626" font-size="14" font-weight="600" paint-order="stroke" stroke="#fff" stroke-width="4">세로 3</text>
+<text x="110.4" y="96.0" fill="#4f46e5" font-size="14" font-weight="600" paint-order="stroke" stroke="#fff" stroke-width="4">AB = ?</text>
+</svg>
