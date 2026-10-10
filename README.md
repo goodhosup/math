@@ -12,10 +12,15 @@ docs/
 ├── index.md              소개
 ├── how-to-study.md       공부법
 ├── curriculum.md         전체 커리큘럼
-├── basics/               0단계: 기초 다지기 (중학 핵심)
-├── common1/              1단계: 공통수학1
-└── images/               그림 파일
+├── basics/               0단계: 기초 다지기 (중학 핵심, 8단원)
+├── common1/              1단계: 공통수학1 (10단원)
+├── common2/              2단계: 공통수학2 (8단원)
+├── algebra/              3단계: 대수 (7단원)
+├── calculus/             4단계: 미적분Ⅰ (6단원)
+├── probability/          5단계: 확률과 통계 (5단원)
+└── images/               그래프 그림 (SVG)
 mkdocs.yml                웹사이트 설정 (메뉴 순서는 여기 nav에서)
+tools/figures.py          그래프 SVG를 다시 만드는 스크립트 (python3 tools/figures.py)
 ```
 
 ## 위키독스에 올리는 방법

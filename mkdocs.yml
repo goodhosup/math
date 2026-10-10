@@ -59,13 +59,52 @@ nav:
       - 이렇게 공부하세요: how-to-study.md
       - 전체 커리큘럼: curriculum.md
   - "0단계: 기초 다지기":
-      - 1. 음수와 분수, 다시 계산하기: basics/01-numbers.md
-      - 2. 문자와 식 정리하기: basics/02-expressions.md
-      - 3. 일차방정식 풀기: basics/03-linear-equations.md
-      - 4. 함수가 뭐예요?: basics/04-functions.md
-      - 5. 연립방정식: basics/05-systems.md
-      - 6. 제곱근과 무리수: basics/06-square-roots.md
-      - 7. 인수분해 기초: basics/07-factoring.md
-      - 8. 이차방정식 기초: basics/08-quadratic-equations.md
+      - "1. 음수와 분수, 다시 계산하기": basics/01-numbers.md
+      - "2. 문자와 식 정리하기": basics/02-expressions.md
+      - "3. 일차방정식 풀기": basics/03-linear-equations.md
+      - "4. 함수가 뭐예요?": basics/04-functions.md
+      - "5. 연립방정식": basics/05-systems.md
+      - "6. 제곱근과 무리수": basics/06-square-roots.md
+      - "7. 인수분해 기초": basics/07-factoring.md
+      - "8. 이차방정식 기초": basics/08-quadratic-equations.md
   - "1단계: 공통수학1":
-      - 1. 다항식의 덧셈·뺄셈·곱셈: common1/01-polynomials.md
+      - "1. 다항식의 덧셈·뺄셈·곱셈": common1/01-polynomials.md
+      - "2. 다항식의 나눗셈": common1/02-division.md
+      - "3. 항등식과 나머지정리": common1/03-remainder-theorem.md
+      - "4. 인수분해": common1/04-factoring.md
+      - "5. 복소수": common1/05-complex-numbers.md
+      - "6. 이차방정식": common1/06-quadratic-equations.md
+      - "7. 이차방정식과 이차함수": common1/07-quadratic-functions.md
+      - "8. 여러 가지 방정식과 부등식": common1/08-equations-inequalities.md
+      - "9. 경우의 수: 순열과 조합": common1/09-counting.md
+      - "10. 행렬": common1/10-matrices.md
+  - "2단계: 공통수학2":
+      - "1. 평면좌표": common2/01-coordinates.md
+      - "2. 직선의 방정식": common2/02-lines.md
+      - "3. 원의 방정식": common2/03-circles.md
+      - "4. 도형의 이동": common2/04-transformations.md
+      - "5. 집합": common2/05-sets.md
+      - "6. 명제": common2/06-propositions.md
+      - "7. 함수와 합성함수, 역함수": common2/07-functions.md
+      - "8. 유리함수와 무리함수": common2/08-rational-irrational-functions.md
+  - "3단계: 대수":
+      - "1. 지수": algebra/01-exponents.md
+      - "2. 로그": algebra/02-logarithms.md
+      - "3. 지수함수와 로그함수": algebra/03-exp-log-functions.md
+      - "4. 삼각함수": algebra/04-trigonometry.md
+      - "5. 등차수열과 등비수열": algebra/05-sequences.md
+      - "6. 수열의 합과 Σ": algebra/06-sigma.md
+      - "7. 수학적 귀납법": algebra/07-induction.md
+  - "4단계: 미적분Ⅰ":
+      - "1. 함수의 극한": calculus/01-limits.md
+      - "2. 함수의 연속": calculus/02-continuity.md
+      - "3. 미분계수와 도함수": calculus/03-derivatives.md
+      - "4. 도함수의 활용": calculus/04-derivative-applications.md
+      - "5. 부정적분과 정적분": calculus/05-integrals.md
+      - "6. 정적분의 활용": calculus/06-integral-applications.md
+  - "5단계: 확률과 통계":
+      - "1. 순열과 조합 심화": probability/01-permutations-combinations.md
+      - "2. 확률의 뜻과 덧셈정리": probability/02-probability.md
+      - "3. 조건부확률": probability/03-conditional-probability.md
+      - "4. 확률분포": probability/04-distributions.md
+      - "5. 통계적 추정": probability/05-estimation.md

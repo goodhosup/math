@@ -3,7 +3,7 @@ import math
 from xml.sax.saxutils import escape
 COLORS = ["#4f46e5", "#dc2626", "#059669", "#d97706"]
 
-def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xticks=None, yticks=None, hlines=(), vlines=(), shade=None, segments=()):
+def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xticks=None, yticks=None, hlines=(), vlines=(), shade=None, segments=(), yaxis=True):
     x0, x1 = xr; y0, y1 = yr
     pad = 24; padr = 70
     W = (x1 - x0) * unit + pad + padr; H = (y1 - y0) * unit + 2 * pad
@@ -25,7 +25,7 @@ def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xti
     if y0 <= 0 <= y1:
         o.append(f'<line x1="{px(x0):.1f}" y1="{py(0):.1f}" x2="{px(x1):.1f}" y2="{py(0):.1f}" stroke="#111" stroke-width="1.4"/>')
         o.append(f'<text x="{px(x1) + 4:.1f}" y="{py(0) + 4:.1f}">x</text>')
-    if x0 <= 0 <= x1:
+    if yaxis and x0 <= 0 <= x1:
         o.append(f'<line x1="{px(0):.1f}" y1="{py(y0):.1f}" x2="{px(0):.1f}" y2="{py(y1):.1f}" stroke="#111" stroke-width="1.4"/>')
         o.append(f'<text x="{px(0) - 4:.1f}" y="{py(y1) - 8:.1f}">y</text>')
         o.append(f'<text x="{px(0) - 14:.1f}" y="{py(0) + 15:.1f}">O</text>')

@@ -59,6 +59,11 @@ def figs():
          points=[(-1, 2, "극댓값 2", -20, -12), (1, -2, "극솟값 −2", -20, 22)], labels=[(1.6, 2.7, "y = x³ − 3x", B)])
     plot(f"{D}/ca-area.svg", [(lambda x: x**2, B)], xr=(-1, 3), yr=(-1, 5), unit=48,
          shade=(lambda x: x**2, 0, 2, B), labels=[(1.1, 0.7, "S", B), (2.1, 4.6, "y = x²", B)], vlines=[2])
+    # 확률과 통계
+    nd = lambda x: 4 * math.exp(-x * x / 2)
+    plot(f"{D}/pr-normal.svg", [(nd, B)], xr=(-4, 4), yr=(-0.6, 4.6), unit=48, shade=(nd, -1, 1, B),
+         xticks=[(-2, "m−2σ"), (-1, "m−σ"), (1, "m+σ"), (2, "m+2σ")], vlines=[0],
+         labels=[(-0.45, 1.6, "약 68%", "#111"), (0.1, 4.3, "평균 m", "#6b7280")], yaxis=False)
 
 if __name__ == "__main__":
     figs()
