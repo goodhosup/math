@@ -211,4 +211,4 @@ $$
 
 ---
 
-이전 단원: [0단계 8. 이차방정식 기초](../basics/08-quadratic-equations.md) · 다음 단원: 2. 다항식의 나눗셈 (준비 중)
+이전 단원: [0단계 8. 이차방정식 기초](../basics/08-quadratic-equations.md) · 다음 단원: [2. 다항식의 나눗셈](02-division.md)
