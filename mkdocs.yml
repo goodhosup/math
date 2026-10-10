@@ -63,5 +63,9 @@ nav:
       - 2. 문자와 식 정리하기: basics/02-expressions.md
       - 3. 일차방정식 풀기: basics/03-linear-equations.md
       - 4. 함수가 뭐예요?: basics/04-functions.md
+      - 5. 연립방정식: basics/05-systems.md
+      - 6. 제곱근과 무리수: basics/06-square-roots.md
+      - 7. 인수분해 기초: basics/07-factoring.md
+      - 8. 이차방정식 기초: basics/08-quadratic-equations.md
   - "1단계: 공통수학1":
       - 1. 다항식의 덧셈·뺄셈·곱셈: common1/01-polynomials.md
