@@ -3,7 +3,7 @@ import math
 from xml.sax.saxutils import escape
 COLORS = ["#4f46e5", "#dc2626", "#059669", "#d97706"]
 
-def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xticks=None, yticks=None, hlines=(), vlines=(), shade=None):
+def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xticks=None, yticks=None, hlines=(), vlines=(), shade=None, segments=()):
     x0, x1 = xr; y0, y1 = yr
     pad = 24; padr = 70
     W = (x1 - x0) * unit + pad + padr; H = (y1 - y0) * unit + 2 * pad
@@ -55,6 +55,9 @@ def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xti
         if len(cur) > 1: segs.append(cur)
         for s in segs:
             o.append(f'<polyline clip-path="url(#c)" fill="none" stroke="{color}" stroke-width="2.5" points="' + " ".join(f"{u:.1f},{v:.1f}" for u, v in s) + '"/>')
+    for (xa, ya, xb, yb, color, dash) in segments:
+        d = ' stroke-dasharray="5 4"' if dash else ''
+        o.append(f'<line x1="{px(xa):.1f}" y1="{py(ya):.1f}" x2="{px(xb):.1f}" y2="{py(yb):.1f}" stroke="{color}" stroke-width="2"{d}/>')
     for p in points:
         x, y = p[0], p[1]; lab = p[2] if len(p) > 2 else f"({x}, {y})"
         dx = p[3] if len(p) > 3 else 8; dy = p[4] if len(p) > 4 else -8
