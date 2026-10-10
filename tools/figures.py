@@ -34,6 +34,19 @@ def figs():
     plot(f"{D}/c2-irrational.svg", [(lambda x: math.sqrt(x), B, (0, 6)), (lambda x: -math.sqrt(x), R, (0, 6)),
                                     (lambda x: math.sqrt(-x), G, (-6, 0))], xr=(-5, 6), yr=(-3, 3),
          labels=[(3.0, 2.3, "y = √x", B), (3.0, -2.4, "y = −√x", R), (-4.6, 2.2, "y = √(−x)", G)])
+    # 대수
+    plot(f"{D}/al-exp.svg", [(lambda x: 2**x, B), (lambda x: 0.5**x, R)], xr=(-4, 4), yr=(-1, 6),
+         points=[(0, 1, "(0, 1)", 8, 16), (1, 2, "(1, 2)", 8, 4)], hlines=[], labels=[(2.1, 5.4, "y = 2ˣ", B), (-3.9, 5.4, "y = (½)ˣ", R)])
+    plot(f"{D}/al-explog.svg", [(lambda x: 2**x, B), (lambda x: math.log2(x) if x > 0 else None, R, (0.01, 6)), (lambda x: x, "#9ca3af")],
+         xr=(-3, 6), yr=(-3, 6), points=[(0, 1, "(0, 1)", -46, 4), (1, 0, "(1, 0)", 4, 16)],
+         labels=[(0.6, 5.4, "y = 2ˣ", B), (3.6, 1.4, "y = log₂x", R), (4.4, 4.0, "y = x", "#6b7280")])
+    TP = math.pi
+    plot(f"{D}/al-sincos.svg", [(math.sin, B), (math.cos, R)], xr=(-1, 7), yr=(-1.6, 1.6), unit=60,
+         xticks=[(TP/2, "π/2"), (TP, "π"), (3*TP/2, "3π/2"), (2*TP, "2π")], yticks=[(1, "1"), (-1, "−1")],
+         labels=[(1.2, 1.25, "y = sin x", B), (4.6, 1.25, "y = cos x", R)])
+    plot(f"{D}/al-tan.svg", [(lambda x: math.tan(x) if abs(math.cos(x)) > 0.02 else None, B)], xr=(-2, 5), yr=(-3, 3), unit=50,
+         xticks=[(-TP/2, "−π/2"), (TP/2, "π/2"), (TP, "π"), (3*TP/2, "3π/2")], vlines=[-TP/2, TP/2, 3*TP/2],
+         labels=[(3.4, 2.6, "y = tan x", B)])
 
 if __name__ == "__main__":
     figs()
