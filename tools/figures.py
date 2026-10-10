@@ -47,6 +47,18 @@ def figs():
     plot(f"{D}/al-tan.svg", [(lambda x: math.tan(x) if abs(math.cos(x)) > 0.02 else None, B)], xr=(-2, 5), yr=(-3, 3), unit=50,
          xticks=[(-TP/2, "−π/2"), (TP/2, "π/2"), (TP, "π"), (3*TP/2, "3π/2")], vlines=[-TP/2, TP/2, 3*TP/2],
          labels=[(3.4, 2.6, "y = tan x", B)])
+    # 미적분Ⅰ
+    plot(f"{D}/ca-limit-hole.svg", [(lambda x: x + 1, B)], xr=(-2, 4), yr=(-1, 4),
+         points=[(1, 2, "x = 1 에서는 구멍", 10, 18, "open")], vlines=[1], hlines=[2], labels=[(-1.9, 3.6, "y = (x² − 1)/(x − 1)", B)])
+    plot(f"{D}/ca-jump.svg", [(lambda x: 1, B, (-3, 1)), (lambda x: 3, B, (1, 4))], xr=(-2, 4), yr=(-1, 4),
+         points=[(1, 1, "", 0, 0, "open"), (1, 3, "", 0, 0)], labels=[(1.3, 2.1, "x = 1 에서 끊어짐", R)])
+    plot(f"{D}/ca-tangent.svg", [(lambda x: x**2, B), (lambda x: 2*x - 1, R), (lambda x: 3*x - 2, G)], xr=(-1, 4), yr=(-1, 6), unit=48,
+         points=[(1, 1, "A(1, 1)", 10, 12), (2, 4, "B(2, 4)", -58, -6)],
+         labels=[(0.0, 5.6, "y = x²", B), (2.6, 3.0, "접선: 기울기 2", R), (2.3, 5.6, "할선: 기울기 3", G)])
+    plot(f"{D}/ca-cubic.svg", [(lambda x: x**3 - 3*x, B)], xr=(-3, 3), yr=(-3, 3), unit=48,
+         points=[(-1, 2, "극댓값 2", -20, -12), (1, -2, "극솟값 −2", -20, 22)], labels=[(1.6, 2.7, "y = x³ − 3x", B)])
+    plot(f"{D}/ca-area.svg", [(lambda x: x**2, B)], xr=(-1, 3), yr=(-1, 5), unit=48,
+         shade=(lambda x: x**2, 0, 2, B), labels=[(1.1, 0.7, "S", B), (2.1, 4.6, "y = x²", B)], vlines=[2])
 
 if __name__ == "__main__":
     figs()

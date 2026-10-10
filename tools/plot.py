@@ -61,7 +61,10 @@ def plot(path, funcs, xr=(-4, 4), yr=(-4, 4), points=(), unit=36, labels=(), xti
     for p in points:
         x, y = p[0], p[1]; lab = p[2] if len(p) > 2 else f"({x}, {y})"
         dx = p[3] if len(p) > 3 else 8; dy = p[4] if len(p) > 4 else -8
-        o.append(f'<circle cx="{px(x):.1f}" cy="{py(y):.1f}" r="4.5" fill="#f59e0b"/>')
+        if len(p) > 5 and p[5] == "open":
+            o.append(f'<circle cx="{px(x):.1f}" cy="{py(y):.1f}" r="5" fill="#fff" stroke="#4f46e5" stroke-width="2.5"/>')
+        else:
+            o.append(f'<circle cx="{px(x):.1f}" cy="{py(y):.1f}" r="4.5" fill="#f59e0b"/>')
         if lab: o.append(f'<text x="{px(x) + dx:.1f}" y="{py(y) + dy:.1f}" paint-order="stroke" stroke="#fff" stroke-width="4">{escape(str(lab))}</text>')
     for (x, y, text, color) in labels:
         o.append(f'<text x="{px(x):.1f}" y="{py(y):.1f}" fill="{color}" font-size="14" font-weight="600" paint-order="stroke" stroke="#fff" stroke-width="4">{escape(text)}</text>')
